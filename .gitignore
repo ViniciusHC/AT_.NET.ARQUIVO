@@ -1,0 +1,10 @@
+﻿# Build / IDE
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+# Outros comuns
+*.log
+*.tmp

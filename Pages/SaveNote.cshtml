@@ -1,0 +1,14 @@
+﻿@page
+@model EscritaLeituraArquivo.Pages.SaveNoteModel
+@{
+	ViewData["Title"] = "Bloco de Notas";
+}
+
+<p>Mensagem:</p>
+<form method="post">
+	<textarea rows="8" cols="80" asp-for="Input.Content"></textarea>
+	<p></p>
+	<button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<p>Clique <a href="@Model.UrlDownload" download>aqui</a> para baixar os arquivos salvos</p>

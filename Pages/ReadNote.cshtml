@@ -1,0 +1,19 @@
+﻿@page
+@model EscritaLeituraArquivo.Pages.ReadNoteModel
+@{
+}
+
+@if (!Model.ListaArquivos.Any())
+{
+	<p>Ainda não há arquivos salvos</p>
+}
+else
+{
+	@foreach (var arquivo in Model.ListaArquivos)
+	{
+		<li>
+			<a href="~/files/@arquivo">@arquivo</a>
+		</li>
+	}
+}
+
